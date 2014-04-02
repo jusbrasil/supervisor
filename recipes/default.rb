@@ -40,6 +40,7 @@ directory node['supervisor']['dir'] do
   owner "root"
   group "root"
   mode "755"
+  recursive true
 end
 
 template node['supervisor']['conffile'] do
